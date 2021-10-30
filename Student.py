@@ -8,8 +8,8 @@ def getDatasrc(dataPath):
     with open(dataPath) as csv_file:
         df = csv.DictReader(csv_file)
         for row in df:
-            Coffee.append(float(row["Marks"]))
-            sleep.append(float(row["Days"]))
+            Marks.append(float(row["Marks"]))
+            Days.append(float(row["Days"]))
     return{
         'x':Marks,
         'y': Days
